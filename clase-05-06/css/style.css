@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(231, 231, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloque_padre {
+    width: 220px;
+}
+
+#estilo_div {
+    border: 1px solid rgb(37, 36, 36);
+    padding: 10px 10px 0 0;
+    background-color: white;
+    width: 220px;
+    height: 30px;
+    text-align: right;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    width: 50px;
+
+}
+
+.fondo_negro {
+    background-color: black;
+}
+
+.bloque {
+    width: 50px;
+    float: left;
+}
+
+.bloque_operaciones {
+    width: 70px;
+    float: left;
+}
+
+.estilo_boton_operaciones {
+    width: 70px;
+
+}
+.bloque__igual {
+    width: 100px;
+    float: left;
+}
+
+.estilo_boton_igual{
+    width: 100px;
+float: left;
+}
