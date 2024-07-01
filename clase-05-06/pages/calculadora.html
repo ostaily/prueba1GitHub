@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <title>Calculadora</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -16,7 +20,7 @@
                     <img src="../assets/ob.png" alt="" width="40">
                 </a>
             </div>
-            
+
             <a class="navbar-brand" href="../../index.html">Ostaily</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,88 +39,99 @@
     <h1 id="bienvenida"></h1>
     <hr>
 
-    <div id="estilo_div">
-        <div>
-            <div id="resultadoOperaciones">0</div>
-        </div>
-    </div>
-
-    <div class="bloque_padre">
-        <div class="bloque">
-            <button class="estilo_boton" onclick="1();">1</button>
-        </div>
-
-        <div class="bloque">
-            <button class="estilo_boton" onclick="2();">2</button>
-        </div>
-
-        <div class="bloque">
-            <button class="estilo_boton" onclick="3();">3</button>
-        </div>
-        <div class="bloque_operaciones">
-            <button class="estilo_boton_operaciones" onclick="sumar();">+</button>
-        </div>
-    </div>
-    <div class="bloque_padre">
-        <div class="bloque">
-            <button class="estilo_boton" onclick="4();">4</button>
-        </div>
-
-        <div class="bloque">
-            <button class="estilo_boton" onclick="5();">5</button>
-        </div>
-
-        <div class="bloque">
-            <button class="estilo_boton" onclick="6();">6</button>
-        </div>
-        <div class="bloque_operaciones">
-            <button class="estilo_boton_operaciones" onclick="multiplicar();">X</button>
-        </div>
-    </div>
-    <div class="bloque_padre">
-        <div class="bloque">
-            <button class="estilo_boton" onclick="7();">7</button>
-        </div>
-
-        <div class="bloque">
-            <button class="estilo_boton" onclick="8();">8</button>
-        </div>
-
-        <div class="bloque">
-            <button class="estilo_boton" onclick="9();">9</button>
-        </div>
-        <div class="bloque_operaciones">
-            <button class="estilo_boton_operaciones" onclick="restar();">-</button>
-        </div>
-    </div>
-    <div class="bloque_padre">
-        <div class="bloque_igual">
-            <button class="estilo_boton_igual" onclick="igual();">=</button>
-        </div>
-        <div class="bloque">
-            <button class="estilo_boton" onclick="dividir();">÷</button>
-        </div>
-        <div class="bloque">
-            <button class="estilo_boton_operaciones" onclick="porcentaje();">%</button>
-        </div>
-    </div>
-
-    
-
-   
 
     <div>
-        <input type="number" id="numero1" placeholder="Ingrese el primer numero">
+        <input type="number" id="numero1" class="estilo_div" placeholder="Primer numero">
+    </div>
+    <div>
+        <input type="number" id="numero2" class="estilo_div" placeholder="Segundo numero">
     </div>
 
-    <div>
-        <input type="number" id="numero2" placeholder="Ingrese el segundo numero">
+    <div style="width: 220px;">
+        <div class="bloque_padre">
+            <div class="bloque">
+                <button class="estilo_boton" onclick="">1</button>
+            </div>
+
+            <div class="bloque">
+                <button class="estilo_boton" onclick="">2</button>
+            </div>
+
+            <div class="bloque">
+                <button class="estilo_boton" onclick="">3</button>
+            </div>
+            <div class="bloque_operaciones">
+                <button class="estilo_boton_operaciones" onclick="sumar();">+</button>
+            </div>
+        </div>
+        <div class="bloque_padre">
+            <div class="bloque">
+                <button class="estilo_boton" onclick=";">4</button>
+            </div>
+
+            <div class="bloque">
+                <button class="estilo_boton" onclick=";">5</button>
+            </div>
+
+            <div class="bloque">
+                <button class="estilo_boton" onclick=";">6</button>
+            </div>
+            <div class="bloque_operaciones">
+                <button class="estilo_boton_operaciones" onclick="multiplicar();">x</button>
+            </div>
+        </div>
+        <div class="bloque_padre">
+            <div class="bloque">
+                <button class="estilo_boton" onclick="">7</button>
+            </div>
+
+            <div class="bloque">
+                <button class="estilo_boton" onclick="">8</button>
+            </div>
+
+            <div class="bloque">
+                <button class="estilo_boton" onclick="">9</button>
+            </div>
+            <div class="bloque_operaciones">
+                <button class="estilo_boton_operaciones" onclick="restar();">-</button>
+            </div>
+        </div>
+        <div class="bloque_padre">
+            <div class="bloque_igual">
+                <button class="estilo_boton_igual" onclick="igual();">=</button>
+            </div>
+            <div class="bloque">
+                <button class="estilo_boton" onclick="dividir();">÷</button>
+            </div>
+            <div class="bloque">
+                <button class="estilo_boton_operaciones" onclick="porcentaje();">%</button>
+            </div>
+        </div>
+        <div class="bloque_padre">
+            <div class="estilo_div_resultado">
+                <div>
+                    <div id="resultadoOperaciones">0</div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div style="float:left; margin-top: -250px; margin-left: 10px;">
+        <!-- <div>Local Storage Log:</div> -->
+        <div id="resultadoLogsLocalSotrage"></div>
+    </div>
+
+
+
+
+
+
     <script src="../js/utils.js"></script>
 
-   <script src="../js/logica.js"></script>
-   <script>
-    cargarMensaje();
-   </script>
+    <script src="../js/logica.js"></script>
+    <script>
+        cargarMensaje();
+    </script>
 </body>
+
 </html>
