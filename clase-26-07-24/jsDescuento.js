@@ -18,24 +18,28 @@ function agregarProducto(){
     //precio del producto   
     //const nombreProducto = selectProductos.options[selectProductos.selectedIndex].text;
     const nombreProducto = selectProductos.options[selectProductos.selectedIndex].text
-    //cantidad producto
+    //descuento producto
     const precioProducto= selectProductos.value
-    const cantidad= document.getElementById('cantidad').value
-    const subTotal= precioProducto*cantidad
+    const descuento= document.getElementById('descuento').value
+    const subTotal= precioProducto - ((precioProducto*descuento)/100)
     const fila = document.createElement('tr')
+
     const nomProduct= document.createElement('td')
     nomProduct.textContent=nombreProducto
     fila.appendChild(nomProduct)
+
     const priceProduct= document.createElement('td')
     priceProduct.textContent=precioProducto
     fila.appendChild(priceProduct)
-    
+
     const quantityProduct= document.createElement('td')
-    quantityProduct.textContent=cantidad
+    quantityProduct.textContent=descuento
     fila.appendChild(quantityProduct)
+    
     const total= document.createElement('td')
     total.textContent=subTotal
     fila.appendChild(total)
+
     const botonProduct= document.createElement('td')
     const botonBorrar = document.createElement('button')
     botonBorrar.textContent='Borrar'
@@ -43,7 +47,6 @@ function agregarProducto(){
     botonBorrar.addEventListener('click',()=>{
         fila.remove()
         calcularTotal()
-        alert('eliminando')
     })
     botonProduct.appendChild(botonBorrar)
     fila.appendChild(botonProduct)
